@@ -1,7 +1,6 @@
 package com.ben.controller;
 
 import com.ben.domain.AccountStatus;
-import com.ben.exceptions.SellerException;
 import com.ben.modal.Seller;
 import com.ben.service.SellerService;
 import lombok.RequiredArgsConstructor;

@@ -14,7 +14,7 @@ public class GlobalException {
     @ExceptionHandler(SellerException.class)
     public ResponseEntity<ErrorDetails> sellerExceptionHandler(SellerException se, WebRequest req){
         ErrorDetails errorDetails = new ErrorDetails();
-        errorDetails.setErrpr(se.getMessage());
+        errorDetails.setError(se.getMessage());
         errorDetails.setDetails(req.getDescription(false));
         errorDetails.setTimeStamp(LocalDateTime.now());
 
@@ -24,7 +24,7 @@ public class GlobalException {
     @ExceptionHandler(ProductException.class)
     public ResponseEntity<ErrorDetails> productExceptionHandler(SellerException se, WebRequest req){
         ErrorDetails errorDetails = new ErrorDetails();
-        errorDetails.setErrpr(se.getMessage());
+        errorDetails.setError(se.getMessage());
         errorDetails.setDetails(req.getDescription(false));
         errorDetails.setTimeStamp(LocalDateTime.now());
 
